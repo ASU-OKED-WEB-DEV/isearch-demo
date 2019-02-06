@@ -72,7 +72,7 @@ $app->get('/dept/{nid}/{name}', function (Request $request, Response $response, 
 
         print "<p>Departments: " . implode(", ", $person->departments) . "</p>";
 
-        print "<p>Department IDs: " . implode(", ", $person->deptids) . "</p>";
+        //print "<p>Department IDs: " . implode(", ", $person->deptids) . "</p>";
 
         if(isset($person->bio)) {
 
