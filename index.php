@@ -68,6 +68,8 @@ $app->get('/dept/{nid}/{name}', function (Request $request, Response $response, 
 
         print "<h3>" . $person->firstName . " " . $person->lastName . "</h3>";
 
+        print "<p>Display Name: " . $person->displayName . "</p>";
+
         print "<p>Titles: " . implode(", ", $person->titles) . "</p>";
 
         print "<p>Departments: " . implode(", ", $person->departments) . "</p>";
